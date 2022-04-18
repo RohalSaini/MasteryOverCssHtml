@@ -46,7 +46,7 @@
 
 .gridContainer > header > .navbar > ul > li> ul > li> a,
 .gridContainer > header > .navbar > ul > li> ul > li> ul> li> a {
-    padding: 1.5em;
+    padding: 1.5rem;
 }
 
 .gridContainer > header > .navbar > ul > li > a:hover,

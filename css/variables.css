@@ -1,0 +1,27 @@
+:root {
+  --ff-primary: sans-serif;
+  --ff-primary: #ff8000;
+  --ff-black: black;
+  --ff-blue: #000099;
+  --ff-green: #28a745;
+  --ff-black-1x: #222;
+  --ff-half-white: #9d9d9d;
+  --ff-white: #fff;
+
+  --colorLightLime: #abd699;
+  --colorFreshLemon: #ffe26a;
+  --colorTeal: #75c9b7;
+  --colorMint: #c7ddcc;
+  --colorNavy: #16123f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}

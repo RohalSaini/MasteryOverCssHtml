@@ -1,0 +1,143 @@
+.gridContainer > header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var( --colorMint);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 10;
+}
+
+.gridContainer > header > .logo  {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #333;
+    text-decoration: none;
+    margin-right: 5rem;
+}
+
+.gridContainer > header > .navbar ul {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.gridContainer > header > .navbar > ul > li,
+.gridContainer > header > .navbar > ul > li > ul > li ,
+.gridContainer > header > .navbar > ul > li > ul > li > ul> li {
+    position: relative;
+    float: left;
+}
+
+.gridContainer > header > .navbar > ul >li > a ,
+.gridContainer > header > .navbar > ul > li> ul > li> a,
+.gridContainer > header > .navbar > ul > li> ul > li> ul> li> a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 2.5em;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.gridContainer > header > .navbar > ul > li> ul > li> a,
+.gridContainer > header > .navbar > ul > li> ul > li> ul> li> a {
+    padding: 1.5em;
+}
+
+.gridContainer > header > .navbar > ul > li > a:hover,
+.gridContainer > header > .navbar > ul > li> ul > li> a:hover,
+.gridContainer > header > .navbar > ul > li> ul > li> ul> li > a:hover{
+    background: #333;
+    color: #fff;
+} 
+
+
+.gridContainer > header > .navbar > ul >li > ul,
+.gridContainer > header > .navbar > ul >li > ul > li >ul {
+    position: absolute;
+    left: 0;
+    width: 15rem;
+    background: var(--colorMint);
+    display: none;
+}
+
+
+.gridContainer >  header > .navbar > ul> li >ul >li ,
+.gridContainer > header > .navbar >ul > li >ul > li > ul > li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+} 
+
+.gridContainer > header > .navbar > ul >li >ul >li >ul {
+    left: 15rem;
+    top:0;
+}
+
+.gridContainer > header > .navbar > ul > li:hover > ul,
+.gridContainer > header > .navbar > ul > li > ul > li:hover > ul {
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+.gridContainer > header > label {
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width:991px) {
+    .gridContainer > header {
+        padding:2rem;
+    }
+
+    .gridContainer > header > .navbar {
+        display: none;
+    }
+    .gridContainer > header >label {
+        display: initial;
+    }
+
+    .gridContainer > header > .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top:  1px solid rgba(0, 0,0,.1);
+    }
+
+    .gridContainer > header > .navbar > ul > li {
+        width: 100%;
+    }
+
+    .gridContainer > header > .navbar >ul >li >ul,
+    .gridContainer > header > .navbar >ul >li >ul>li >ul{
+        position: relative;
+        width: 100%;
+    }
+
+    .gridContainer > header > .navbar >ul >li {
+        background-color: #eee;
+    }
+
+    .gridContainer > header > .navbar > ul >li >ul >li {
+        width: 100%;
+        position: relative;
+        left: 0;
+        z-index: 2;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}
